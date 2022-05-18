@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Url -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Our Main Css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Music App</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="music_details">
+        <!-- Left Side -->
+        <div class="left_side">
+          <img
+            src="https://cdn.pixabay.com/photo/2022/05/08/12/51/flower-7182055_960_720.jpg"
+            alt="Razu Islam"
+            class="audia_img"
+          />
+        </div>
+        <!-- RIght SIde -->
+        <div class="right_side">
+          <h5>audio download Songs</h5>
+          <h2>audio download</h2>
+          <span>14 Tracks</span>
+          <p>Playlist created by Gaana User</p>
+        </div>
+      </div>
+      <!-- Music Table List -->
+      <div class="song_list">
+        <ul>
+          <li>Track</li>
+          <li>Artists</li>
+          <li>Album</li>
+          <li class="duration">Duration</li>
+        </ul>
+        <div class="main_songs"></div>
+      </div>
+    </div>
+
+    <div class="container-audio">
+      <audio
+        class="audio"
+        src="https://www.rafaelalucas.com/dailyui/9/songs/song3.mp3"
+      ></audio>
+      <div class="player">
+        <div>
+          <input type="range" min="0" />
+          <div class="progress"></div>
+          <!-- <div></div> -->
+        </div>
+        <div class="sm_player">
+          <span>start</span>
+          <span>end</span>
+        </div>
+      </div>
+      <div>
+        <button class="play_pause" type="button">
+          <i class="fa-solid fa-play"></i>
+        </button>
+      </div>
+      <p>Volume</p>
+      <input
+        class="volume"
+        type="range"
+        max="100"
+        min="0"
+        step="1"
+        value="100"
+      />
+    </div>
+
+    <!-- Add Our Main Js -->
+    <script src="./js/data.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
